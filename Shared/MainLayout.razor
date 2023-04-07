@@ -1,17 +1,21 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
+<header class="main-header default-background">
+    <NavMenu />
+</header>
+
+<main class="main-content">
+    <div class="container-fluid">
+        @Body
     </div>
+</main>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
-
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+<footer class="default-background">
+    <a class="default-text-color" href="/"><span>Ønskeportalen</span></a>
+    <p>Copyright © 2023 Ønskeportalen</p>
+    <ul>
+        <li><a class="default-text-color" href="/faq">FAQ</a></li>
+        <li><a class="default-text-color" href="/AboutUs">Om os</a></li>
+        <li><a class="default-text-color" href="mailto:noreply.oenskeportalen@gmail.com">Kontakt</a></li>
+    </ul>
+</footer>

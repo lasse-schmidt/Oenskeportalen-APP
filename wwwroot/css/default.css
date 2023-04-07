@@ -1,0 +1,35 @@
+﻿/*Templates*/
+.default-background {
+    background-color: #111 !important;
+}
+
+.default-text-color {
+    color: #c69b4f !important;
+}
+
+.default-hover-effect {
+    color: #111 !important;
+    background-color: #c69b4f !important;
+    border: 2px solid #c69b4f !important;
+    transition: all 0.4s ease-in-out !important;
+}
+
+    .default-hover-effect:hover {
+        color: #c69b4f !important;
+        background-color: #111 !important;
+        border-color: #c69b4f !important;
+    }
+
+.default-border {
+    border: 2px solid #c69b4f !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.disabled {
+    background-color: #c69b4f !important;
+    border-color: #c69b4f !important;
+    color: #111 !important;
+}
