@@ -68,7 +68,7 @@
         <MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#111" />
 
         <!-- Splash Screen -->
-        <MauiSplashScreen Include="Resources\Splash\logo.png" Color="#111" BaseSize="128,128" />
+        <MauiSplashScreen Include="Resources\Splash\logo.webp" Color="#111" BaseSize="200,200" />
 
         <!-- Images -->
         <MauiImage Include="Resources\Images\*" />
@@ -82,6 +82,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="CommunityToolkit.Maui" Version="5.0.0" />
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
     </ItemGroup>
 

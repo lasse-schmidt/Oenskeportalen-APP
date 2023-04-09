@@ -1,0 +1,39 @@
+﻿@page "/register"
+<div class="form-container default-text-color">
+    <h3>Tilmelding</h3>
+    
+    <form method="post" accept-charset="utf-8" class="was-validated" action="/users/register"><div style="display:none;"><input type="hidden" name="_csrfToken" autocomplete="off" value="St0ZsuGJStDDoWa5tdwapcq3srVway9BO/i3BWVFeV2KFz2LSBafJM2bY4Fkv63Q08xSk1h1pjdkYjUVlTD0Jyl2Q6bcuTE/+oeGjEdTSyNdntZkVnxNOL8gDrl+LvwT/6ICsALeneW2rjCjO02UBw=="></div>    
+        <fieldset>
+            <div class="input text required">
+                <label for="name">Name</label>
+                <input type="text" name="name" required="required" id="name" aria-required="true" value="" maxlength="255">
+            </div>            
+            <div class="input email required">
+                <label for="email">Email</label>
+                <input type="email" name="email" required="required" data-validity-message="This field cannot be left empty" oninvalid="this.setCustomValidity(''); if (!this.value) this.setCustomValidity(this.dataset.validityMessage)" oninput="this.setCustomValidity('')" id="email" aria-required="true" maxlength="255">
+            </div>            
+            <div class="input date required">
+                <label for="birthday">Fødselsdag</label>
+                <input type="date" name="birthday" minyear="1923" maxyear="2005" required="required" onfocus="this.showPicker()" id="birthday" aria-required="true" value="">
+            </div>            
+            <div class="input password required">
+                <label for="password">Password</label>
+                <input type="password" name="password" required="required" data-validity-message="This field cannot be left empty" oninvalid="this.setCustomValidity(''); if (!this.value) this.setCustomValidity(this.dataset.validityMessage)" oninput="this.setCustomValidity('')" id="password" aria-required="true">
+            </div>            
+            <div class="input password required">
+                <label for="repeat-password">Repeat Password</label>
+                <input type="password" name="repeat_password" required="required" id="repeat-password" aria-required="true">
+            </div>            
+        
+        </fieldset>
+        <button type="submit">Tilmeld</button>    
+        <div style="display:none;">
+            <input type="hidden" name="_Token[fields]" autocomplete="off" value="ce38b6b8e7a466f8ce5689ef49b757bb36998542%3A">
+            <input type="hidden" name="_Token[unlocked]" autocomplete="off" value="">
+        </div>
+    </form>    
+    <div class="link-container">
+        <a href="/login" class="link">Har du allerede en bruger så login her</a>    
+    </div>
+    
+</div>
