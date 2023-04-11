@@ -14,11 +14,11 @@
     transition: all 0.4s ease-in-out !important;
 }
 
-    .default-hover-effect:hover {
-        color: #c69b4f !important;
-        background-color: #111 !important;
-        border-color: #c69b4f !important;
-    }
+.default-hover-effect:hover {
+    color: #c69b4f !important;
+    background-color: #111 !important;
+    border-color: #c69b4f !important;
+}
 
 .default-border {
     border: 2px solid #c69b4f !important;

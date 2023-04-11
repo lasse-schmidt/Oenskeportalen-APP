@@ -22,17 +22,26 @@ body {
     position: fixed;
     min-width: 100%;
     font-weight: bold;
-    font-size: 1.2em;
+    padding: 8px 15px;
 }
 
-.main-header .top-nav-title img {
+.main-header .navbar-brand {
+    font-size: 1.6em;
+}
+
+.main-header img {
     width: 45px;
     border-radius: 100%;
 }
 
+.testwrap{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /*Navigator*/
-.nav-link{
+.nav-link {
     color: #c69b4f !important;
 }
 
@@ -40,6 +49,7 @@ body {
 /*Main*/
 .main-content {
     margin-top: 80px;
+    min-height: 75vh;
 }
 
 
@@ -99,8 +109,6 @@ footer {
     min-height: 15vh;
     border-top: 2px solid #c69b4f;
     padding-top: 2px;
-    position: absolute;
-    bottom: 0;
     min-width: 100%;
 }
 
@@ -201,20 +209,14 @@ footer ul li a {
     max-height: 20px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #c69b4f;
-}
+    ::-webkit-scrollbar-thumb:hover {
+        background: #c69b4f;
+    }
 
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
-}
-
-.error-message {
-    color: #f00;
-    font-size: 14px;
-    margin-top: 4px;
 }
 
 
@@ -244,13 +246,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .about-wrapper h4 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 8px;
 }
 
 .about-wrapper p {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     letter-spacing: 1.1px;
     line-height: 1.5em;
     margin-bottom: 0;

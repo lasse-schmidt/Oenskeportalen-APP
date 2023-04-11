@@ -1,17 +1,20 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
+﻿<div class="testwrap">
+    <div>
         <a class="navbar-brand default-text-color" href="">
-            <img src="/img/logo.webp" alt="logo"/>
+            <img src="/img/logo.webp" alt="logo" />
             Ønskeportalen
         </a>
-        
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+    </div>
+    <div class="top-row ps-3 navbar default-background navbar-dark">
+        <button title="Navigation menu" class="navbar-toggler default-text-color" @onclick="ToggleNavMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
     </div>
 </div>
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+
+
+<div class="@NavMenuCssClass thisonehere" @onclick="ToggleNavMenu">
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
