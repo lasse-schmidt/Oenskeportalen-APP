@@ -1,0 +1,30 @@
+﻿@page "/forgot"
+<div class="form-container default-text-color">
+    <h3>Nulstil Adgangskode</h3>
+    <p>Du modtager en mail med et link til at nulstille din adgangskode</p>
+    <form method="post" accept-charset="utf-8" action="/users/forgot-login">
+        <div style="display:none;">
+            <input type="hidden" name="_csrfToken" autocomplete="off" value="WxMiaY7dNBwW9EkJjpv5apNDcWBUyTT24JChsYUVN8qX9SK4OvbId1DFLgPUR2PTyswPg5VVDzxHpzaM0KQ2sTDVzCbDQNra8XBAUjf6DMfUoJLV5HZUqK+UQ48Ol6pGYvwaYOx/BeLy9D2z9jZrCA==">
+        </div>
+        <fieldset>
+            <div class="input email required">
+                <label for="email">Email</label>
+                <input type="email" name="email" required="required" id="email" aria-required="true">
+            </div>
+        </fieldset>
+        <div class="submit">
+            <input type="submit" value="Send">
+        </div>
+        <div style="display:none;">
+            <input type="hidden" name="_Token[fields]" autocomplete="off" value="72b5fed35d391b6acc4403239618e6766ffda331%3A">
+            <input type="hidden" name="_Token[unlocked]" autocomplete="off" value="">
+        </div>
+    </form>
+    <div class="link-container">
+        <a href="/register" class="link">Har du ikke en bruger så registrer dig her</a>
+    </div>
+    <div class="link-container">
+        <a href="/login" class="link">Har du allerede en bruger så login her</a>
+    </div>
+</div>
+
