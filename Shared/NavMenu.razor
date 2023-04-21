@@ -1,4 +1,4 @@
-﻿<div class="testwrap">
+﻿<div class="headwrapper">
     <div>
         <a class="navbar-brand default-text-color" href="">
             <img src="/img/logo.webp" alt="logo" />
@@ -12,9 +12,7 @@
     </div>
 </div>
 
-
-
-<div class="@NavMenuCssClass thisonehere" @onclick="ToggleNavMenu">
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
@@ -32,17 +30,11 @@
             </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="dashboard">
-                Dashboard
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
             <NavLink class="nav-link" href="login">
                 Login
             </NavLink>
         </div>
     </nav>
-    
 </div>
 
 @code {

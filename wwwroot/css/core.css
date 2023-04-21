@@ -34,7 +34,7 @@ body {
     border-radius: 100%;
 }
 
-.testwrap{
+.headwrapper{
     display: flex;
     justify-content: space-between;
 }
@@ -256,17 +256,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     letter-spacing: 1.1px;
     line-height: 1.5em;
     margin-bottom: 0;
-}
-
-
-/*Mobile-mneu*/
-.mobile-menu {
-    font-size: 3em;
-    display: none;
-}
-
-.mobile-menu span {
-    cursor: pointer;
 }
 
 
